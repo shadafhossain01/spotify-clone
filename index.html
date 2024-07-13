@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!--  favicon Link Add -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+<!--  google fonts Link Add -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--  Font awesome Link Add -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--  CSS Link Add -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false">
+<div class="container">
+   
+    <!-- sidebar -->
+<section class="sidebar">
+<div class="sidebar-top">
+ <div>
+    <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 511.991"><path fill="#fff" fill-rule="nonzero" d="M255.998.003C114.616.003 0 114.616 0 255.997c0 141.385 114.616 255.994 255.998 255.994C397.395 511.991 512 397.386 512 255.997 512 114.624 397.395.015 255.994.015l.004-.015v.003zm117.4 369.22c-4.585 7.519-14.427 9.908-21.949 5.288-60.104-36.714-135.771-45.027-224.882-24.668-8.587 1.954-17.146-3.425-19.104-12.015-1.967-8.591 3.394-17.15 12.003-19.104 97.518-22.28 181.164-12.688 248.645 28.55 7.522 4.616 9.907 14.427 5.288 21.95l-.001-.001zm31.335-69.703c-5.779 9.389-18.067 12.353-27.452 6.578-68.813-42.298-173.703-54.548-255.096-29.837-10.556 3.187-21.704-2.761-24.906-13.298-3.18-10.556 2.772-21.68 13.309-24.891 92.971-28.208 208.551-14.546 287.574 34.015 9.385 5.779 12.35 18.067 6.575 27.441v-.004l-.004-.004zm2.692-72.584c-82.511-49.006-218.635-53.51-297.409-29.603-12.649 3.837-26.027-3.302-29.86-15.955-3.832-12.656 3.303-26.023 15.96-29.867 90.428-27.452 240.753-22.149 335.747 34.245 11.401 6.754 15.133 21.446 8.375 32.809-6.728 11.378-21.462 15.13-32.802 8.371h-.011z"/></svg>
+    <span class="logo-text">Spotify</span>
+ </div>
+ <div>
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+ </div>
+ <div>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span>Search</span>
+ </div>
+</div>
+
+<div class="sidebar-bottom">
+    <div class="library-top">
+        <div>
+            <svg fill="#9c9c9c" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+            <span> Your library</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+    </div>
+ <div class="sidebar-box">
+    <div class="box">
+        <h6> Create your first playlist</h6>
+        <p> It's easy, we'll help you</p>
+        <button>create playlist</button>
+    </div>
+    <div class="box">
+        <h6> Let's find some podcasts to follow</h6>
+        <p>We'll keep you updated on new episodes</p>
+        <button>Browse podcasts</button>
+    </div>
+ </div>
+
+ <div class="sidebar-bootom-foot">
+<ul>
+   <div>
+    <li>Legal</li>
+    <li>Safety & privacy Center</li>
+    <li>privacy policy</li>
+   </div>
+   <div>
+    <li>Cookies</li>
+    <li>About Ads</li>
+    <li>Accessibility</li>
+   </div>
+   <li>Cookies</li>
+</ul>
+
+<button><i class="fa-solid fa-globe"></i> English</button>
+
+ </div>
+
+</div>
+
+</section>
+
+<!-- main Section -->
+<section class="main">
+<div class="main-top">
+    <div class="main-left">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+    <div class="main-right">
+     <span>Sign up</span>
+        <button> Log in</button>
+    </div>
+</div>
+<div class="main-body">
+    <div class="head-text">
+        <h4>Popular artists</h4>
+        <span>Show all</span>
+    </div>
+  <div class="card-box">
+    <div class="card circle">
+        <img src="images/artist1.jpeg" alt="">
+        <p>Pritam</p>
+        <span>Artist</span>
+    </div>
+    <div class="card circle">
+        <img src="images/artist2.jpeg" alt="">
+        <p>Atif Aslam</p>
+        <span>Artist</span>
+    </div>
+    <div class="card circle">
+        <img class="three-img" src="images/artist3.jpeg" alt="">
+        <p>Darshan Raval</p>
+        <span>Artist</span>
+    </div>
+    <div class="card circle">
+        <img class="three-img" src="images/artist4.jpeg" alt="">
+        <p>Pritom hasan</p>
+        <span>Artist</span>
+    </div>
+    <div class="card circle">
+        <img class="three-img" src="images/artist5.jpeg" alt="">
+        <p>Tanveer Evan</p>
+        <span>Artist</span>
+    </div>
+    <div class="card circle">
+        <img class="three-img" src="images/artist8.jpeg" alt="">
+        <p>Arijit singh</p>
+        <span>Artist</span>
+    </div>
+    <div class="card circle">
+        <img class="three-img" src="images/artist6.jpeg" alt="">
+        <p>Anuv Jain</p>
+        <span>Artist</span>
+    </div>
+  </div>
+  <div class="head-text">
+    <h4>Popular albumbs</h4>
+    <span>Show all</span>
+</div>
+<div class="card-box">
+    <div class="card2">
+        <img src="images/popularalbums1.jpeg" alt="">
+        <p>Aalas ka pedh</p>
+        <span>The Local Train</span>
+    </div>
+    <div class="card2">
+        <img src="images/popularalbums2.jpeg" alt="">
+        <p>Husn</p>
+        <span>Anuv jain</span>
+    </div>
+    <div class="card2">
+        <img src="images/popularalbums3.jpeg" alt="">
+        <p>Starboy</p>
+        <span>The Weeknd</span>
+    </div>
+    <div class="card2">
+        <img src="images/popularalbums4.jpeg" alt="">
+        <p>Sajni ( From "Laapata... </p>
+        <span>Ram Sampath, Arijit Singh</span>
+    </div>
+    <div class="card2">
+        <img src="images/popularalbums5.jpeg" alt="">
+        <p>Animal</p>
+        <span>jaani, Vishal Mishra</span>
+    </div>
+    <div class="card2">
+        <img src="images/popularalbums7.jpeg" alt="">
+        <p>Best of Romance: Atif...</p>
+        <span>Atif Aslam, Pritam</span>
+    </div>
+</div>
+
+<div class="head-text">
+    <h4>Popular radio</h4>
+    <span>Show all</span>
+</div>
+<div class="card-box">
+    <div class="card2">
+        <img src="images/radio.jpeg" alt="">
+        <p>Arijit Singh Radio</p>
+        <span>With Neha Kakkar, Pritam, KK <br> and more</span>
+    </div>
+    <div class="card2">
+        <img src="images/radio1.jpeg" alt="">
+        <p>Atif Aslam Radio</p>
+        <span>With Ali Zafar, Rahat Fateh Ali <br>  Khan, Asim Azhar and more</span>
+    </div>
+    <div class="card2">
+        <img src="images/radio2.jpeg" alt="">
+        <p>The Weeknd Radio</p>
+        <span>With The Neighbourhood, SZA, <br> Lana  Del Rey and more</span>
+    </div>
+    <div class="card2">
+        <img src="images/radio3.jpeg" alt="">
+        <p>KK Radio</p>
+        <span>With Mohit Chauhan, Ankit Tiwari, <br> Javed Ali and more</span>
+    </div>
+    <div class="card2">
+        <img src="images/radio4.jpeg" alt="">
+        <p>Tahsan Radio</p>
+        <span>With Hridoy Khan, Habib Wahid, <br> Pritom Hasan and more</span>
+    </div>
+    <div class="card2">
+        <img src="images/radio5.jpeg" alt="">
+        <p>Habib Wahid Radio</p>
+        <span>With Hridoy Khan, Balam, Porshi <br> and more </span>
+    </div>
+  
+</div>
+
+<div class="head-text">
+    <h4>Featured Charts</h4>
+    <span>Show all</span>
+</div>
+<div class="card-box">
+    <div class="card2">
+        <img src="images/charts.jpg" alt="">
+        <p>Top Songs - Global</p>
+        <span>Your weekly update of <br> the most  played tracks right no...</span>
+    </div>
+    <div class="card2">
+        <img src="images/charts0.jpg" alt="">
+        <p>Viral 50 - USA</p>
+        <span>Your daily update of the <br> most viral tracks right no....</span>
+    </div>
+    <div class="card2">
+        <img src="images/charts1.jpg" alt="">
+        <p>Viral 50 - Global</p>
+        <span>Your daily update of the most <br> viral tracks right now -...</span>
+    </div>
+    <div class="card2">
+        <img src="images/charts2.jpg" alt="">
+        <p>Top 50 - USA</p>
+        <span>Your daily update of the most <br> played tracks right now - USA.</span>
+    </div>
+    <div class="card2">
+        <img src="images/charts3.jpg" alt="">
+        <p>Top 50 - Global</p>
+        <span>Your daily update of the most <br> played tracks right now - Global.</span>
+    </div>
+    <div class="card2">
+        <img src="images/charts4.jpg" alt="">
+        <p>Top Songs - USA</p>
+        <span>Your weekly update of the most <br> played tracks right now - USA.</span>
+    </div>
+    
+  
+</div>
+
+<div class="head-text">
+    <h4>Playlist</h4>
+    <span>Show all</span>
+</div>
+<div class="card-box">
+    <div class="card2">
+        <img src="images/palylist1.jpeg" alt="">
+        <p>80s party</p>
+       
+    </div>
+    <div class="card2">
+        <img src="images/playlist0.jpeg" alt="">
+        <p>Rock Party</p>
+       
+    </div>
+    <div class="card2">
+        <img src="images/playlist2.jpeg" alt="">
+        <p>Party Hits -2000s</p>
+       
+    </div>
+    <div class="card2">
+        <img src="images/playlist3.jpeg" alt="">
+        <p>Party Hits -2010s</p>
+       
+    </div>
+    <div class="card2">
+        <img src="images/playlist4.jpeg" alt="">
+        <p>Dance Party</p>
+       
+    </div>
+    <div class="card2">
+        <img src="images/palylist1.jpeg" alt="">
+        <p>80s party</p>
+       
+    </div>
+   
+  
+</div>
+<div class="about">
+    <div>
+        <p>Company</p>
+        <ul>
+            
+            <li>About</li>
+            <li>Jobs</li>
+            <li>For the Record</li>
+        </ul>
+    </div>
+    <div> 
+        <p>Communities</p>
+        <ul>
+            <li>For Artists</li>
+            <li>Developers</li>
+            <li>Advertising</li>
+            <li>Investors</li>
+            <li>Vendors</li>
+        </ul>
+    </div>
+    <div>
+        <p>Useful links</p>
+        <ul>
+            <li>Support</li>
+            <li>Free Mobile App</li>
+        </ul>
+    </div>
+    <div>
+        <p>Spotify plans</p>
+        <ul>
+            <li>Premium Individual</li>
+            <li>Premium Duo</li>
+            <li>Premium Student</li>
+            <li>Premium Family</li>
+            <li>Spotify Free</li>
+    
+        </ul>
+    </div>
+    <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-github"></i>
+
+    </div>
+    <div class="line">
+<p>&copy; Spotify by Shadaf Hossain  </p>
+        </div>
+</div>
+
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="foot-left">
+        <img src="images/foot.jpeg" alt="">
+        <div>
+            <p>Satranga (From "ANIMAL")</p>
+        <p>Arijit Singh, Shreyas Puranik, Siddharth - Garima </p>
+        </div>
+        <i class="fa-solid fa-plus"></i>
+    </div>
+    <div class="control">
+        <div>
+            <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-play rotate"></i>
+            <i class="fa-solid fa-pause "></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-rotate-left"></i>
+            
+        </div>
+        <div>
+            <span> 2:30 </span>
+               <input type="range" min="0" max="100" value="50" class="progress">
+               <span> 3:40 </span>
+            </div>
+    </div>
+    <div class="option">
+        <i class="fa-solid fa-play bx"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-traffic-light"></i>
+        <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
